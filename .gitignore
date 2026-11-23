@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets: never committed
+api.key
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+*_creds.json
+.canvas_session.json
+
+# Hermes kanban card worktrees
+.worktrees/
+
+# Instructor working data: never committed.  Course content, student
+# data, exports and one-off course scripts live here or outside the repo.
+workspace/
+backups/
+exports/
+logs/
+*.log
+zybooks-import/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

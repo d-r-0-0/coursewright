@@ -1,0 +1,18 @@
+/* ================================================================
+   Coursewright — global Textual stylesheet
+   ================================================================
+   Keep this file small.  Screen-specific rules live in each
+   screen's DEFAULT_CSS so a screen is readable on its own.
+   ================================================================ */
+
+Screen {
+    background: $surface;
+}
+
+#welcome-message {
+    width: 100%;
+    height: auto;
+    padding: 2 4;
+    content-align: center middle;
+    text-align: center;
+}

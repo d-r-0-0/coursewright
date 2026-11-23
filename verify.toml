@@ -1,0 +1,49 @@
+# The verification gate, as data.
+#
+# cantrips/verify.py reads this file and runs the stages in order,
+# stopping at the first failure.  The Makefile and the CI workflow
+# delegate to that cantrip, so this file is the only place the gate is
+# defined.  Stage keys are documented at the top of cantrips/verify.py.
+#
+# Order matters: cheap structural checks run before expensive ones so a
+# broken cantrip or a drifted instruction file fails in seconds rather
+# than after a full test run.
+
+[[stage]]
+name = "scaffold"
+builtin = "compile-cantrips"
+
+[[stage]]
+name = "doc-drift"
+description = "Instruction files still agree with their source"
+command = "python cantrips/sync_agent_files.py"
+
+[[stage]]
+name = "doc-budget"
+description = "Instruction files stay within their line budget"
+command = "python cantrips/lint_doc_budget.py"
+
+[[stage]]
+name = "deps"
+description = "No known CVEs in declared dependencies (pip-audit)"
+command = "python cantrips/audit_deps.py"
+
+[[stage]]
+name = "workflows"
+description = "GitHub Actions hardening (zizmor)"
+command = "python cantrips/audit_workflows.py"
+
+[[stage]]
+name = "secrets"
+description = "No unreviewed secrets in committable files (detect-secrets)"
+command = "python cantrips/scan_secrets.py"
+
+[[stage]]
+name = "lint"
+description = "Lint the source tree (ruff, config in pyproject.toml)"
+command = "python -m ruff check ."
+
+[[stage]]
+name = "test"
+description = "Run the test suite (pytest, config in pyproject.toml)"
+command = "python -m pytest"

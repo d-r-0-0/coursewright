@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coursewright"
+version = "0.1.0"
+description = "An AI teaching assistant and instructional designer for Canvas LMS"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Drew Rozema" }]
+keywords = ["canvas", "lms", "education", "grading", "course-design", "agents"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Education",
+  "Programming Language :: Python :: 3",
+  "Topic :: Education",
+]
+# The full set used by both source projects is declared up front so
+# port branches never touch this list (docs/PORTING.md).
+dependencies = [
+  "httpx>=0.25",
+  "keyring>=25.0",
+  "markdown>=3.5",
+  "openpyxl>=3.1",
+  "pandas>=2.1",
+  "pydantic>=2.5",
+  "pypdf>=4.0",
+  "python-dateutil>=2.8",
+  "python-dotenv>=1.0",
+  "pyyaml>=6.0",
+  "requests>=2.31",
+  "rich>=13.7",
+  "textual>=1.0",
+  "typer>=0.12",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.40"]
+packettracer = [
+  "docx2python>=2.0",
+  "PyMuPDF>=1.24",
+  "python-docx>=1.1",
+  "rapidfuzz>=3.5",
+]
+dev = [
+  "detect-secrets>=1.5,<2",
+  "pip-audit>=2.10",
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "pytest-httpx>=0.30",
+  "ruff>=0.6",
+  "textual-dev>=1.0",
+  "zizmor>=1.30",
+]
+
+[project.scripts]
+coursewright = "coursewright.ui.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"coursewright.design.standards" = ["*.toml"]
+"coursewright.design.standards.rubrics" = ["*.toml"]
+"coursewright.core.llm" = ["model_pricing.json", "prompts/*.md"]
+"coursewright.design.discussions" = ["templates/*.md"]
+"coursewright.ui.tui" = ["styles/*.tcss"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".worktrees"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# Typer declares options as calls in argument defaults.
+"src/coursewright/ui/cli/*.py" = ["B008"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Import the checkout being tested, not the editable install: port
+# branches run in git worktrees that share one virtualenv.
+pythonpath = ["src"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-q -ra --strict-markers -m 'not integration'"
+markers = [
+  "integration: needs a live Canvas or LLM service",
+]

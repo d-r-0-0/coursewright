@@ -1,0 +1,367 @@
+# OSCQR - SUNY Online Course Quality Review Rubric: standard statements.
+#
+# The OSCQR Rubric was developed by the State University of New York,
+# through SUNY Online, and is made available under the Creative Commons
+# Attribution 4.0 International License (CC BY 4.0):
+# https://creativecommons.org/licenses/by/4.0/
+# Source: https://oscqr.suny.edu/
+#
+# Changes from the source: only each standard's statement is
+# reproduced, reformatted as TOML.  The section a standard belongs to
+# is recorded as data, and a standard is tagged "rsi" when its page
+# has a "How This Standard Supports RSI" (Regular and Substantive
+# Interaction) section.  Explanations, examples and resources are not
+# included: follow each standard's url for those.
+# This file is not endorsed by SUNY.
+
+[rubric]
+id = "oscqr"
+name = "OSCQR - SUNY Online Course Quality Review Rubric"
+publisher = "State University of New York, SUNY Online"
+license = "CC-BY-4.0"
+source_url = "https://oscqr.suny.edu/"
+retrieved = "2026-11-14"
+text_included = true
+
+[[section]]
+id = "overview-and-information"
+name = "Overview and Information"
+
+[[section]]
+id = "technology-and-tools"
+name = "Course Technology and Tools"
+
+[[section]]
+id = "design-and-layout"
+name = "Design and Layout"
+
+[[section]]
+id = "content-and-activities"
+name = "Content and Activities"
+
+[[section]]
+id = "interaction"
+name = "Interaction"
+
+[[section]]
+id = "assessment-and-feedback"
+name = "Assessment and Feedback"
+
+[[standard]]
+id = "1"
+section = "overview-and-information"
+text = "Course includes Welcome and Getting Started content."
+url = "https://oscqr.suny.edu/standard1/"
+tags = ["rsi"]
+
+[[standard]]
+id = "2"
+section = "overview-and-information"
+text = "Course provides an overall orientation or overview, as well as module-level overviews to make course content, activities, assignments, due dates, interactions, and assessments, predictable and easy to navigate/find."
+url = "https://oscqr.suny.edu/standard2/"
+tags = ["rsi"]
+
+[[standard]]
+id = "3"
+section = "overview-and-information"
+text = "Course includes a course information area and syllabus that make course expectations clear and findable."
+url = "https://oscqr.suny.edu/standard3/"
+tags = ["rsi"]
+
+[[standard]]
+id = "4"
+section = "overview-and-information"
+text = "A printable syllabus is available to learners (PDF, HTML)."
+url = "https://oscqr.suny.edu/standard4/"
+
+[[standard]]
+id = "5"
+section = "overview-and-information"
+text = "Course includes links to relevant campus policies on plagiarism, computer use, filing grievances, accommodating disabilities, etc."
+url = "https://oscqr.suny.edu/standard5/"
+
+[[standard]]
+id = "6"
+section = "overview-and-information"
+text = "Course provides access to online learner success resources (support services, orientation, academic honesty, tutoring, technical help)."
+url = "https://oscqr.suny.edu/standard6/"
+tags = ["rsi"]
+
+[[standard]]
+id = "7"
+section = "overview-and-information"
+text = "Course information states whether the course is fully online, blended, or web-enhanced."
+url = "https://oscqr.suny.edu/standard7/"
+
+[[standard]]
+id = "8"
+section = "overview-and-information"
+text = "Course provides appropriate guidelines for successful participation regarding technical requirements (e.g., browser version, mobile, publisher resources, secure content, pop-ups, browser issues, microphone, webcam)."
+url = "https://oscqr.suny.edu/standard8/"
+
+[[standard]]
+id = "9"
+section = "overview-and-information"
+text = "Course objectives/outcomes are clearly defined, measurable, and aligned to learning activities and assessments."
+url = "https://oscqr.suny.edu/standard9/"
+tags = ["rsi"]
+
+[[standard]]
+id = "10"
+section = "overview-and-information"
+text = "Course provides contact information for instructor, department, and program."
+url = "https://oscqr.suny.edu/standard10/"
+tags = ["rsi"]
+
+[[standard]]
+id = "11"
+section = "technology-and-tools"
+text = "Requisite skills for using technology tools (websites, software, and hardware) are clearly stated and supported with resources."
+url = "https://oscqr.suny.edu/standard11/"
+
+[[standard]]
+id = "12"
+section = "technology-and-tools"
+text = "Technical skills required for participation in course learning activities scaffold in a timely manner (orientation, practice, and application – where appropriate)."
+url = "https://oscqr.suny.edu/standard12/"
+
+[[standard]]
+id = "13"
+section = "technology-and-tools"
+text = "Frequently used technology tools are easily accessed. Any tools not being utilized are removed from the course menu."
+url = "https://oscqr.suny.edu/standard13/"
+
+[[standard]]
+id = "14"
+section = "technology-and-tools"
+text = "Course includes links to privacy policies for technology tools."
+url = "https://oscqr.suny.edu/standard14/"
+
+[[standard]]
+id = "15"
+section = "technology-and-tools"
+text = "Any technology tools meet accessibility standards."
+url = "https://oscqr.suny.edu/standard15/"
+
+[[standard]]
+id = "16"
+section = "design-and-layout"
+text = "A logical, consistent, and uncluttered layout is established. The course is easy to navigate (consistent color scheme and icon layout, related content organized together, self-evident titles)."
+url = "https://oscqr.suny.edu/standard16/"
+
+[[standard]]
+id = "17"
+section = "design-and-layout"
+text = "Large blocks of information are divided into manageable sections with ample white space around and between the blocks."
+url = "https://oscqr.suny.edu/standard17/"
+
+[[standard]]
+id = "18"
+section = "design-and-layout"
+text = "There is enough contrast between text and background for the content to be easily viewed."
+url = "https://oscqr.suny.edu/standard18/"
+
+[[standard]]
+id = "19"
+section = "design-and-layout"
+text = "Instructions are provided and well written."
+url = "https://oscqr.suny.edu/standard19/"
+tags = ["rsi"]
+
+[[standard]]
+id = "20"
+section = "design-and-layout"
+text = "Course is free of grammatical and spelling errors."
+url = "https://oscqr.suny.edu/standard20/"
+
+[[standard]]
+id = "21"
+section = "design-and-layout"
+text = "Text is formatted with titles, headings, and other styles to enhance readability and improve the structure of the document."
+url = "https://oscqr.suny.edu/standard21/"
+
+[[standard]]
+id = "22"
+section = "design-and-layout"
+text = "Flashing and blinking text are avoided."
+url = "https://oscqr.suny.edu/standard22/"
+
+[[standard]]
+id = "23"
+section = "design-and-layout"
+text = "A sans-serif font with a standard size of at least 12 pt is used."
+url = "https://oscqr.suny.edu/standard23/"
+
+[[standard]]
+id = "24"
+section = "design-and-layout"
+text = "When possible, information is displayed in a linear format instead of as a table."
+url = "https://oscqr.suny.edu/standard24/"
+
+[[standard]]
+id = "25"
+section = "design-and-layout"
+text = "Tables are accompanied by a title and summary description."
+url = "https://oscqr.suny.edu/standard25/"
+
+[[standard]]
+id = "26"
+section = "design-and-layout"
+text = "Table header rows and columns are assigned."
+url = "https://oscqr.suny.edu/standard26/"
+
+[[standard]]
+id = "27"
+section = "design-and-layout"
+text = "Slideshows use a predefined slide layout and include unique slide titles."
+url = "https://oscqr.suny.edu/standard27/"
+
+[[standard]]
+id = "28"
+section = "design-and-layout"
+text = "For all slideshows, there are simple, non-automatic transitions between slides."
+url = "https://oscqr.suny.edu/standard28/"
+
+[[standard]]
+id = "29"
+section = "content-and-activities"
+text = "Course offers access to a variety of engaging resources to present content, support learning and collaboration, and facilitate regular and substantive interaction with the instructor."
+url = "https://oscqr.suny.edu/standard29/"
+tags = ["rsi"]
+
+[[standard]]
+id = "30"
+section = "content-and-activities"
+text = "Course provides activities for learners to develop higher-order thinking and problem solving skills, such as critical reflection and analysis."
+url = "https://oscqr.suny.edu/standard30/"
+tags = ["rsi"]
+
+[[standard]]
+id = "31"
+section = "content-and-activities"
+text = "Course provides activities that emulate real world applications of the discipline, such as experiential learning, case studies, and problem-based activities."
+url = "https://oscqr.suny.edu/standard31/"
+tags = ["rsi"]
+
+[[standard]]
+id = "32"
+section = "content-and-activities"
+text = "Where available, Open Educational Resources, free, or low cost materials are used."
+url = "https://oscqr.suny.edu/standard32/"
+
+[[standard]]
+id = "33"
+section = "content-and-activities"
+text = "Course materials and resources include copyright and licensing status, clearly stating permission to share where applicable."
+url = "https://oscqr.suny.edu/standard33/"
+
+[[standard]]
+id = "34"
+section = "content-and-activities"
+text = "Text content is available in an easily accessed format, preferably HTML. All text content is readable by assistive technology, including a PDF or any text contained in an image."
+url = "https://oscqr.suny.edu/standard34/"
+
+[[standard]]
+id = "35"
+section = "content-and-activities"
+text = "A text equivalent for every non-text element is provided (“alt” tags, captions, transcripts, etc.), and audio description is provided for video-only content ."
+url = "https://oscqr.suny.edu/standard35/"
+
+[[standard]]
+id = "36"
+section = "content-and-activities"
+text = "Text, graphics, and images are understandable when viewed without color. Text should be used as a primary method for delivering information."
+url = "https://oscqr.suny.edu/standard36/"
+
+[[standard]]
+id = "37"
+section = "content-and-activities"
+text = "Hyperlink text is descriptive and makes sense when out of context (avoid using “click here”)."
+url = "https://oscqr.suny.edu/standard37/"
+
+[[standard]]
+id = "38"
+section = "interaction"
+text = "Regular and substantive instructor-to-student expectations, and predictable/scheduled interactions and feedback, are present, appropriate for the course length and structure, and are easy to find."
+url = "https://oscqr.suny.edu/standard38/"
+tags = ["rsi"]
+
+[[standard]]
+id = "39"
+section = "interaction"
+text = "Expectations for all course interactions (instructor to student, student to student, student to instructor) are clearly stated and modeled in all course interaction/communication channels."
+url = "https://oscqr.suny.edu/standard39/"
+tags = ["rsi"]
+
+[[standard]]
+id = "40"
+section = "interaction"
+text = "Learners have an opportunity to get to know the instructor."
+url = "https://oscqr.suny.edu/standard40/"
+tags = ["rsi"]
+
+[[standard]]
+id = "41"
+section = "interaction"
+text = "Course provides activities intended to build a sense of class community, support open communication, promote regular and substantive interaction, and establish trust (e.g., ice-breaking activities, Course Bulletin Board, planned Office Hours, and dedicated discussion forums)."
+url = "https://oscqr.suny.edu/standard41/"
+tags = ["rsi"]
+
+[[standard]]
+id = "42"
+section = "interaction"
+text = "Course offers opportunities for learner to learner interaction and constructive collaboration."
+url = "https://oscqr.suny.edu/standard42/"
+
+[[standard]]
+id = "43"
+section = "interaction"
+text = "Course provides learners with opportunities in course interactions to share resources and inject knowledge from diverse sources of information with guidance and/or standards from the instructor."
+url = "https://oscqr.suny.edu/standard43/"
+tags = ["rsi"]
+
+[[standard]]
+id = "44"
+section = "assessment-and-feedback"
+text = "Course grading policies, including consequences of late submissions, are clearly stated in the Course Information/ Syllabus materials."
+url = "https://oscqr.suny.edu/standard44/"
+tags = ["rsi"]
+
+[[standard]]
+id = "45"
+section = "assessment-and-feedback"
+text = "Course includes frequent, appropriate, and authentic methods to assess the learners’ mastery of content."
+url = "https://oscqr.suny.edu/standard45/"
+tags = ["rsi"]
+
+[[standard]]
+id = "46"
+section = "assessment-and-feedback"
+text = "Criteria for the assessment of a graded assignment are clearly articulated (rubrics, exemplary work)."
+url = "https://oscqr.suny.edu/standard46/"
+tags = ["rsi"]
+
+[[standard]]
+id = "47"
+section = "assessment-and-feedback"
+text = "Course provides opportunities for learners to review their performance and assess their own learning throughout the course (via pre-tests, self-tests with feedback, reflective assignments, peer assessment, etc.)."
+url = "https://oscqr.suny.edu/standard47/"
+tags = ["rsi"]
+
+[[standard]]
+id = "48"
+section = "assessment-and-feedback"
+text = "Learners are informed when a timed response is required. Proper lead time is provided to ensure there is an opportunity to prepare an accommodation."
+url = "https://oscqr.suny.edu/standard48/"
+
+[[standard]]
+id = "49"
+section = "assessment-and-feedback"
+text = "Learners have easy access to a well-designed and up-to-date gradebook."
+url = "https://oscqr.suny.edu/standard49/"
+
+[[standard]]
+id = "50"
+section = "assessment-and-feedback"
+text = "Course includes the opportunity for learners to provide descriptive feedback on their experience in the online course, the course design, content, user experience, and technology."
+url = "https://oscqr.suny.edu/standard50/"
